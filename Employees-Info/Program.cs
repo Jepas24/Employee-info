@@ -11,10 +11,7 @@ string RM = Console.ReadLine();
 Console.WriteLine("Enter the number of resigned females: ");
 string RF = Console.ReadLine();
 
-Console.WriteLine(" ==== ");
-Console.WriteLine(" Thank you for the information ");
-Console.WriteLine(" ==== ");
-Console.WriteLine(" Here is the Summary !!! ");
+
 
 
 int totalOfHiredEmployee = (Int16.Parse(NHM) + Int16.Parse(NHF));
@@ -22,11 +19,15 @@ int totalOfPermanentEmployee = (Int16.Parse(PPM) + Int16.Parse(PPF));
 int totalOfResignedEmployee = (Int16.Parse(RM) + Int16.Parse(RF));
 float totalOfMale = (float.Parse(NHM) * 100 / totalOfHiredEmployee);
 float totalOfFemale = (float.Parse(NHF) * 100 / totalOfHiredEmployee);
-float totalOfPermanentMale = (float.Parse(PPM) * 100 / totalOfHiredEmployee);
-float totalOfPermanentFemale = (float.Parse(PPF) * 100 / totalOfHiredEmployee);
-float totalOfResignedMale = (float.Parse(RM) * 100 / totalOfHiredEmployee);
-float totalOfResignedFemale = (float.Parse(RF) * 100 / totalOfHiredEmployee);
+float totalOfPermanentMale = (float.Parse(PPM) * 100 / totalOfPermanentEmployee);
+float totalOfPermanentFemale = (float.Parse(PPF) * 100 / totalOfPermanentEmployee);
+float totalOfResignedMale = (float.Parse(RM) * 100 / totalOfResignedEmployee);
+float totalOfResignedFemale = (float.Parse(RF) * 100 / totalOfResignedEmployee);
 
+Console.WriteLine(" ==== ");
+Console.WriteLine(" Thank you for the information ");
+Console.WriteLine(" ==== ");
+Console.WriteLine(" Here is the Summary !!! ");
 
 Console.WriteLine("  ");
 Console.WriteLine(" Number of hired employee = " + totalOfHiredEmployee);
